@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Faculty Profiles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url("clg.jpg");
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+.active{
+  background-color:orange;
+  float: right;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  width : 100%;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none; 
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.faculty-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.faculty-profile {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px); 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 400px; 
+  }
+
+.faculty-profile img {
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.faculty-profile h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.faculty-profile p {
+  color: #555;
+}
+
+.profile-section {
+  margin-bottom: 10px;
+  text-align: left; 
+}
+
+.profile-section h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-section p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="reclogo.png" alt="" style="width:600px">
+  <p></p>
+</div>
+
+<div class="navbar">
+  <a href="clghome.html">HOME</a>
+  <a href="faculty.html">FACULTY CORNER</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html">CONTACT US</a>
+  <a href="login.html"   class="active">LOGIN</a>
+ <a href="register.html"   class="active">REGISTER</a>
+
+
+</div>
+
+<div class="main">
+  <h2>Faculty Profiles</h2>
+  
+  <div class="faculty-profiles">
+    <div class="faculty-profile">
+      <img src="vakaimalar.jpg" alt="">
+      <h3>Dr.E.Vakaimalar,Ph.D</h3>
+      <p>Head of the Department</p>
+      <p>vakaimalarit@kamarjengg.edu.in</p>
+     <a class="active"href="details1.html">View Profile</a>
+         </div>
+
+    <div class="faculty-profile">
+      <img src="arthy.jpg" alt="">
+      <h3>Dr.R.Arthy,Ph.D</h3>
+      <p>Assistant professor</p>
+      <p>arthyit@kamarajengg.edu.in</p>
+<a class="active"href="details2.html">View Profile</a>
+
+           </div>
+   <div class="faculty-profile">
+      <img src="deepa.jpg" alt="" style="width:125px">
+      <h3>Mrs.V.Deepa priya, M.E (Ph.D)</h3>
+      <p>Assistant professor</p>
+      <p>deepapriyait@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="Vendhan.jpg" alt="">
+      <h3>Dr. D. Vendhan M.Sc., M.Tech., Ph.D.,</h3>
+      <p>Assistant professor</p>
+      <p>vendhanit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="rajkannan.png" alt="">
+      <h3>Mr.C.Raj Kannan,M.E</h3>
+      <p>Assistant professor</p>
+      <p>rajkannanit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="ram.jpg" alt="">
+      <h3>Mr.Ram Ganesh.G.H,M.E,Ph.D</h3>
+      <p>Assistant professor</p>
+      <p>ramganeshit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="mahalakshmi.jpg" alt="">
+      <h3>Mrs.P.Mahalakshmi,M.E</h3>
+      <p>Assistant professor</p>
+      <p>mahalakshmiit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="priya.jpg" alt="">
+      <h3>Mrs.P.Priyadharshini,M.E</h3>
+      <p>Assistant professor</p>
+      <p>priyadharshiniit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="sgayathiri.jpg" alt="">
+      <h3>Mrs.S.Gayathri,M.E</h3>
+      <p>Assistant professor</p>
+      <p>gayathiriit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="vgayathiri.jpeg" alt="">
+      <h3>Mrs.V.Gayathri,M.E</h3>
+      <p>Assistant professor</p>
+      <p>gayathiriit@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+<div class="faculty-profile">
+      <img src="saranya.jpg" alt="">
+      <h3>Mrs.R.Saranya Priyadharshini,M.E</h3>
+      <p>Assistant professor</p>
+      <p>saranyait@kamarajengg.edu.in</p>
+<a class="active"href="details.html">View Profile</a>
+
+           </div>
+
+           </div>
+
+
+
+</div>
+<br>
+<div class="footer">
+  <p>&copy; 2024 Kmaraj College of Engineering and Technology. All rights reserved.</p>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="contact.html">Contact Us</a>
+  </p>
+</div>
+
+</body>
+</html>

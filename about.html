@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kamaraj</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url("clg.jpg");
+  background-size: cover; /* This makes the image cover the entire header */
+  background-position: center; /* This centers the image */
+  color: white; /* Keep this to ensure text remains visible */
+}
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  background-color:orange;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.active{
+  background-color:orange;
+  float: right;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url("front.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+  max-width: 1200px; /* Set a maximum width for the main content */
+  margin: 0 auto; /* Center the main content */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.footer a {
+  color: #333; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="reclogo.png" alt="" style="width:600px">
+  <p></p>
+</div>
+
+<div class="navbar">
+  <a href="clghome.html">HOME</a>
+  <a href="faculty.html">FACULTY CORNER</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html">CONTACT US</a>
+  
+<a href="login.html"   class="active">LOGIN</a>
+ <a href="register.html"   class="active">REGISTER</a>
+ 
+
+</div>
+<div>
+<h3 style="font-size:50px;color:blue" >ABOUT KCET</h3>
+<P  style="font-size:25px;color:white" >Our College was established in the year 1998. It is promoted and supported by Virudhunagar Hindu Nadars' Devasthanam, various Hindu Nadars' Mahamai Tharappus in Virudhunagar and other places and educational institutions of Virudhunagar. The management of the institution consists of the elected members of various Mahamai Tharappus and ex-officio members of various educational institutions of Virudhunagar. The office bearers, the president, the vice-president, the secretary, the joint secretary and the treasurer - are elected by the managing board members.
+
+Our College is ideally located on the home land of Karmaveerar "Bharat Ratna" K. Kamaraj and our institution is one of the Virudhunagar's most recognisable landmark. Our beloved Patron Thiru.A.S.K.A.M. Nagarajan magnanimously donated 50 Lakhs and Our Founder Secretary Er.S.P.G.C. Srimurugan has donated 25 acres of Land for the progress of our college. Our Institution is growing with sustained progress due to the generous contributions from Virudhunagar Devasthanam, Various Mahamai Tharappus and Educational Institutions. Presently, Our College spans to 47.92 acres of land.</P>
+</div>
+<div class="footer">
+  <p>&copy; 2024 Kamaraj College of Engineering and Technology. All rights reserved.</p>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="contact.html">Contact Us</a>
+  </p>
+</div>
+
+</body>
+</html>

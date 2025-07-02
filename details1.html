@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kamaraj</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .achievements {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .achievements h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .achievements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .achievements li {
+            margin-bottom: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+
+        }
+	 .article {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url("clg.jpg");
+  background-size: cover; /* This makes the image cover the entire header */
+  background-position: center; /* This centers the image */
+  color: white; /* Keep this to ensure text remains visible */
+}
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  background-color:orange;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.active{
+  background-color:orange;
+  float: right;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+  max-width: 1200px; /* Set a maximum width for the main content */
+  margin: 0 auto; /* Center the main content */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.footer a {
+  color: #333; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="reclogo.png" alt="" style="width:600px">
+  <p></p>
+</div>
+
+<div class="navbar">
+  <a href="clghome.html">HOME</a>
+  <a href="faculty.html">FACULTY CORNER</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html">CONTACT US</a>
+  
+<a href="login.html"   class="active">LOGIN</a>
+ <a href="register.html"   class="active">REGISTER</a>
+</div>
+<center>
+<h3 style="font-size:50px" > Dr.E.Vakaimalar,Ph.D</h3>
+<p style="font-size:30px">Head of the Department</p>
+
+ <img src="vakaimalar.jpg" alt="" style="width:200px" >
+ <div class="achievements">
+        <h2>Profile Achievements</h2>
+        <ul id="achievementList">
+            <li onclick="toggleDetails('infosys')">BRONZE PARTNER FACULTY UNDER INSPIRE, 2016</li>
+            <div id="infosysDetails" class="details">
+                <p>Details about BRONZE PARTNER FACULTY UNDER INSPIRE...</p>
+            </div>
+            <li onclick="toggleDetails('iit_kgp')">ELITE IN PROGRAMMING IN C++, IIT Kharagpur, 2015</li>
+            <div id="iit_kgpDetails" class="details">
+                <p>Details about ELITE IN PROGRAMMING IN C++...</p>
+            </div>
+            <li onclick="toggleDetails('iit_kanpur')">ELITE IN FUNDAMENTALS OF DATABASE SYSTEMS, IIT Kanpur, 2015</li>
+            <div id="iit_kanpurDetails" class="details">
+                <p>Details about ELITE IN FUNDAMENTALS OF DATABASE SYSTEMS...</p>
+            </div>
+        </ul>
+    </div>
+ <div class="article">
+        <h2>PUBLICATION</h2>
+        <p><strong>Title:</strong> Multifocus image fusion scheme based on discrete cosine transform and spatial frequency</p>
+        <p><strong>Authors:</strong> Suresh Babu R, Mala K, Vakaimalar E</p>
+        <p><strong>Journal:</strong> Multimedia Tools and Applications</p>
+        <p><strong>Volume:</strong> 78</p>
+        <p><strong>Year:</strong> 2019</p>
+        <p><strong>Pages:</strong> 1-15</p>
+        <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s11042-018-7124-9">10.1007/s11042-018-7124-9</a></p>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id + 'Details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</center>
+
+<div class="footer">
+  <p>&copy; 2024 Kamaraj College of Engineering and Technology. All rights reserved.</p>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="contact.html">Contact Us</a>
+  </p>
+</div>
+
+</body>
+</html>
